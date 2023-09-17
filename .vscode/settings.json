@@ -13,7 +13,7 @@
             "port": 3306,
             "driver": "MySQL",
             "name": "First",
-            "database": "local",
+            "database": "myshop",
             "username": "root",
             "password": "Shraddha#7755"
         }
