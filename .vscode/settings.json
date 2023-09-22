@@ -12,8 +12,8 @@
             "server": "localhost",
             "port": 3306,
             "driver": "MySQL",
-            "name": "First",
-            "database": "myshop",
+            "name": "FIRST",
+            "database": "mydb",
             "username": "root",
             "password": "Shraddha#7755"
         }
