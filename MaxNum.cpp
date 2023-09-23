@@ -13,8 +13,8 @@ int max_num(int a[] , int size){
 
 int main()
 {
-    int arr[]={1 ,2 ,4 ,5, 8 ,9 ,12,18 ,44};
-    int size =9;
+    int arr[]={1 ,2 ,4 ,5, 8 ,9 ,12,18 ,44,343};
+    int size =10;
     int Maxnum =max_num(arr ,size);
     cout << "The maximum number is =" <<Maxnum << endl;
     return 0;

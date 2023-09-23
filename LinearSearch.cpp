@@ -1,3 +1,5 @@
+//Linear Search on an array
+
 #include<iostream>
 using namespace std;
 bool find(int a[] , int n , int key){
