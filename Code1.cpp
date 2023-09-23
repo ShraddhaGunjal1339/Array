@@ -10,6 +10,8 @@ int main (){
     //address of array
     cout << arr << endl;
     cout << &arr <<endl;
+
+
     int arr1[53];
     char a[106];
     bool aaa[23];
@@ -18,11 +20,16 @@ int main (){
     int array [] ={2,3,4,5,6};
     int brray [5] ={2,3,4,5,6};
     int crray [10] ={2,3,4,5,6};
+
+
     //int drray [4] ={2,3,4,5,6};
     // it will give a error
+
     cout << "Array initilized sucessfuly"<<endl;
     int arrr[]={1,3,5,7};
     char err[10] ={'a','b','c'};
+
+
     cout << "Hello "<< endl;
 
     // cout << err[10];
@@ -42,6 +49,7 @@ int main (){
     //Taking input from user 
 
     int myarr[5];
+
     cout << "Give the input to the array"<<endl;
     for (int index =0 ; index < 5 ; index++ ){
         cin >> arr[index];
@@ -49,4 +57,3 @@ int main (){
 
      return 0;
 }
-   
