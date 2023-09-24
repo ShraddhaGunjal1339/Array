@@ -1,3 +1,5 @@
+// Use ExtremePrint2.cpp better than this
+
 //To print extreme
 //Output --> 1  8  2  7  3  6  4  5  
 

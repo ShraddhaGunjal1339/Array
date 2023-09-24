@@ -1,7 +1,13 @@
+//Better than ExtremePrint1.cpp
+
+// 2 pointer approach
 //To print extreme
 //Output -->1  8  2  7  3  6  4  5  size =8;
 //Output -->1  7  2  6  3  5  4  4  size =7 and if condition is not added
 //Output -->1  7  2  6  3  5  4     size =7 and if condition is added 
+
+//This is the O/P now
+
 #include<iostream>
 using namespace std;
 void extreme_print(int a[] ,int size){
@@ -14,17 +20,20 @@ void extreme_print(int a[] ,int size){
         //If not added prints middle element twice
             cout << a[start] << "  ";
             return;
+        }else{
+            cout << a[start] << "  ";
+            cout << a[end] << "  ";
+            start++;
+            end--;
         }
-        cout << a[start] << "  ";
-        cout << a[end] << "  ";
-        start++;
-        end--;
+        
     }
     cout << endl;
-    
 }
-int main()
-{
+
+
+int main(){
+    
     int arr[10] ={1,2,3,4,5,6,7};
     int size =7;
 
