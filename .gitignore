@@ -1,4 +1,4 @@
-*.exe
+*.exec
 noOfZerosAndOnes
 Code5
 Code6
@@ -10,3 +10,4 @@ noOfZerosAndOnes.cpp
 LinearSearch
 code3
 Code4
+MinNum
