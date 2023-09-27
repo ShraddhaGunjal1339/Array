@@ -20,8 +20,7 @@ void dutch_natural_flag(vector <int>& arr){
             //IMP
             //i++;         MISTAKE
             //no i++ here because we need to cheak that i again
-
-
+            
             end--;
         }
     }
