@@ -1,15 +1,15 @@
 #include<iostream>
 #include<vector>
 using namespace std;
-
-
-void triplet_sum (vector <int> arr , int sum){
-
+void four_sum (vector <int> arr ,int sum){
     for(int i = 0; i <arr.size() ; i++){
         for (int j = i+1 ; j <arr .size() ;j++){
             for(int k =j+1 ;k <arr . size() ; k++){
-                if (( arr[i]+arr[j]+arr[k]) == sum ){
-                cout <<'(' <<  arr[i] <<" , " << arr[j] << " , "<<arr[k] << ')'<<endl;
+                for(int l =k+1; l<arr.size() ;l++){
+                    if (( arr[i]+arr[j]+arr[k]+arr[l]) == sum ){
+                    cout <<'(' <<  arr[i] <<" , " << arr[j] << " , "<<arr[k]<< " , "<<arr[l] << ')'<<endl;
+                }
+                
             }
             }
             
@@ -17,10 +17,7 @@ void triplet_sum (vector <int> arr , int sum){
     }
 }
 
-//o/p  -->(10 , 20 , 50)
-//(10 , 30 , 40)
-
-
+//o/p -->(10 , 20 , 30 , 40)
 int main()
 {
     vector <int> arr ;
@@ -31,8 +28,12 @@ int main()
     arr.push_back(50);
     arr.push_back(60);
     arr.push_back(70);
+    arr.push_back(80);
+    arr.push_back(90);
 
-    int sum = 80;
-    triplet_sum(arr , sum);
+
+    int sum = 100;
+
+    four_sum(arr , sum);
     return 0;
 }
