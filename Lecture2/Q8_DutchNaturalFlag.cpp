@@ -9,7 +9,12 @@ void dutch_natural_flag(vector <int>& arr){
     int start = 0;
     int end = (arr .size()) -1 ;
     int i = 0;
-    while(start <= end ){
+    while(i != end ){
+        //condition --> i !=end
+        //condition --> start !=end
+        //condition --> start <= end
+
+
          if(arr[i] == 0){
             swap(arr[i],arr[start]);
             i++;
