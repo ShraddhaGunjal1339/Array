@@ -2,26 +2,34 @@
 #include<vector>
 using namespace std;
 
-void find_union(vector<int> arr ,vector <int> brr){
+void find_union_duplicate(vector <int> arr , vector <int> brr){
     vector<int> ans ;
 
     for (int i = 0; i < arr.size(); i++)
     {
         ans.push_back(arr[i]);
+        //Intersection logic
+        //make marking = INT_MIN    (you can make it -1 also for +ve array)
+        for ( int j = 0 ; j < brr .size() ; j++){
+            if( arr[i] == brr [j]){
+                brr[j] = INT_MIN;
+            }
+        }
     }
 
      for (int i = 0; i < brr.size(); i++)
-    {
-        ans.push_back(brr[i]);
+    {   //cheak marking
+        if(brr [i] != INT_MIN){
+            ans.push_back(brr[i]);
+        }
     }
     
     for (int i = 0; i < ans.size(); i++)
     {
         cout << ans[i]<<"  ";
     }
-    
 }
-//o/p -->1  6  5  4  2  1  2  3  4  5  7 
+//o/p -->1  6  5  4  2  3  7
 int main()
 {
     vector <int> arr ;
@@ -40,7 +48,6 @@ int main()
     brr.push_back(5);
     brr.push_back(7);
 
-    find_union(arr,brr);
-    
+    find_union_duplicate(arr,brr);
     return 0;
 }

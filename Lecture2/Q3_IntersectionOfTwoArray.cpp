@@ -72,14 +72,7 @@ void intersection_array(vector<int> arr ,vector<int> brr){
 int main()
 {
     vector <int> arr ;
-    // arr.push_back(1);
-    // arr.push_back(2);
-    // arr.push_back(3);
-    // arr.push_back(3);
-    // arr.push_back(4);
-    // arr.push_back(6);
-    // arr.push_back(8);
-
+    
     arr.push_back(7);
     arr.push_back(6);
     arr.push_back(5);
@@ -89,12 +82,6 @@ int main()
     arr.push_back(2);
     
     vector <int> brr ;
-
-    // brr.push_back(3);
-    // arr.push_back(3);
-    // brr.push_back(4);
-    // brr.push_back(9);
-    // brr.push_back(10);
 
     brr.push_back(1);
     brr.push_back(2);
