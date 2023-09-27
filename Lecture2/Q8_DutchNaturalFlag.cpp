@@ -9,7 +9,7 @@ void dutch_natural_flag(vector <int>& arr){
     int start = 0;
     int end = (arr .size()) -1 ;
     int i = 0;
-    while(start <= end){
+    while(start <= end ){
          if(arr[i] == 0){
             swap(arr[i],arr[start]);
             i++;
@@ -20,6 +20,7 @@ void dutch_natural_flag(vector <int>& arr){
             //IMP
             //i++;         MISTAKE
             //no i++ here because we need to cheak that i again
+            //**  because after swap in i there is a new number  **
             
             end--;
         }
