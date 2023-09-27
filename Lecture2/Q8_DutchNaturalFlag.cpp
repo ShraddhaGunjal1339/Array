@@ -16,7 +16,9 @@ void dutch_natural_flag(vector <int>& arr){
 
 
          if(arr[i] == 0){
-            swap(arr[i],arr[start]);
+            //this swap is not needed
+            //as i and start is on same location always
+            //swap(arr[i],arr[start]);
             i++;
             start++;
         }
