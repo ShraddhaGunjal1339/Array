@@ -1,3 +1,6 @@
+//sort 0's and 1's   -->also known as
+//Dutch natural flag problem 
+
 #include<iostream>
 #include<vector>
 using namespace std;
@@ -6,23 +9,25 @@ void dutch_natural_flag(vector <int>& arr){
     int start = 0;
     int end = (arr .size()) -1 ;
     int i = 0;
-    while(i !=  arr.size()){
+    while(start <= end){
          if(arr[i] == 0){
             swap(arr[i],arr[start]);
             i++;
             start++;
         }
-        else if(arr[i] == 1){
+        else{
             swap(arr[i],arr[end]);
-            i++;
+            //IMP
+            //i++;         MISTAKE
+            //no i++ here because we need to cheak that i again
+
+
             end--;
         }
     }
-   
-
 }
 
-//o/p -->
+//o/p -->0  0  0  0  0  1  1  1  1
 
 int main()
 {
