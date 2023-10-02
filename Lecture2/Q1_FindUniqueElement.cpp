@@ -2,7 +2,6 @@
 #include<vector>
 using namespace std;
 
-
 int find_unique(vector <int> arr){
     int ans =0;
     //0^1 -->1
