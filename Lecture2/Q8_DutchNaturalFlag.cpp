@@ -5,7 +5,7 @@
 #include<vector>
 using namespace std;
 
-void dutch_natural_flag(vector <int>& arr){
+void dutchNaturalFlag(vector <int>& arr){
     int start = 0;
     int end = (arr .size()) -1 ;
     int i = 0;
@@ -49,7 +49,7 @@ int main()
     arr.push_back(0);
     arr.push_back(0);
 
-    dutch_natural_flag(arr);
+    dutchNaturalFlag(arr);
 
 
     //print the arr

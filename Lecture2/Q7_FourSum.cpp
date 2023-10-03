@@ -1,7 +1,7 @@
 #include<iostream>
 #include<vector>
 using namespace std;
-void four_sum (vector <int> arr ,int sum){
+void fourSum (vector <int> arr ,int sum){
     for(int i = 0; i <arr.size() ; i++){
         for (int j = i+1 ; j <arr .size() ;j++){
             for(int k =j+1 ;k <arr . size() ; k++){
@@ -34,6 +34,6 @@ int main()
 
     int sum = 100;
 
-    four_sum(arr , sum);
+    fourSum(arr , sum);
     return 0;
 }

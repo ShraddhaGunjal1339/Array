@@ -1,11 +1,11 @@
-// Use ExtremePrint2.cpp better than this
+// Use Q5.2_ExtremePrint.cpp better than this
 
 //To print extreme
 //Output --> 1  8  2  7  3  6  4  5  
 
 #include<iostream>
 using namespace std;
-void extreme_print (int a[] ,int size ){
+void extremePrint (int a[] ,int size ){
 
     bool flag = 1;
     int initial =0;
@@ -28,6 +28,6 @@ int main()
     int arr[10] = {1 ,2, 3,4 ,5 ,6 ,7 , 8 };
     int size = 8;
 
-    extreme_print(arr , size);
+    extremePrint(arr , size);
     return 0;
 }

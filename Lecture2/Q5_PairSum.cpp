@@ -3,7 +3,7 @@
 
 using namespace std;
 
-void pair_sum (vector <int>  arr , int sum){
+void pairSum (vector <int>  arr , int sum){
 
     for(int i = 0; i <arr.size() ; i++){
         for (int j = i+1 ; j <arr .size() ;j++){
@@ -28,7 +28,7 @@ int main()
     arr.push_back(6);
 
     int sum =9;
-    pair_sum(arr,sum);
+    pairSum(arr,sum);
 
     return 0;
 }

@@ -2,7 +2,7 @@
 #include<vector>
 using namespace std;
 
-void find_union_duplicate(vector <int> arr , vector <int> brr){
+void findUnionDuplicate(vector <int> arr , vector <int> brr){
     vector<int> ans ;
 
     for (int i = 0; i < arr.size(); i++)
@@ -48,6 +48,6 @@ int main()
     brr.push_back(5);
     brr.push_back(7);
 
-    find_union_duplicate(arr,brr);
+    findUnionDuplicate(arr,brr);
     return 0;
 }

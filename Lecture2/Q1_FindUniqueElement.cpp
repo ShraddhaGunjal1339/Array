@@ -2,7 +2,7 @@
 #include<vector>
 using namespace std;
 
-int find_unique(vector <int> arr){
+int findUnique(vector <int> arr){
     int ans =0;
     //0^1 -->1
     //0^0 -->0
@@ -29,7 +29,7 @@ int main()
     for (int i = 0; i< arr .size() ;i++){
         cin >> arr[i];
     }
-    int uniqeElement =find_unique (arr);
-    cout <<"Unique element is "<< uniqeElement <<endl;
+    int uniqe_element =findUnique (arr);
+    cout <<"Unique element is "<< uniqe_element <<endl;
     return 0;
 }

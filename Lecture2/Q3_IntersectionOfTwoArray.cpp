@@ -3,7 +3,7 @@
 
 using namespace std;
 
-void intersection_array(vector<int> arr ,vector<int> brr){
+void intersectionArray(vector<int> arr ,vector<int> brr){
     vector <int> ans;
     //Intersection
     //not works for duplicate elements without adding marking condition 
@@ -99,6 +99,6 @@ int main()
     brr.push_back(1);
 
     
-    intersection_array(arr,brr);
+    intersectionArray(arr,brr);
     return 0;
 }

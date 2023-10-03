@@ -3,7 +3,7 @@
 using namespace std;
 
 
-void triplet_sum (vector <int> arr , int sum){
+void tripletSum (vector <int> arr , int sum){
 
     for(int i = 0; i <arr.size() ; i++){
         for (int j = i+1 ; j <arr .size() ;j++){
@@ -33,6 +33,6 @@ int main()
     arr.push_back(70);
 
     int sum = 80;
-    triplet_sum(arr , sum);
+    tripletSum(arr , sum);
     return 0;
 }

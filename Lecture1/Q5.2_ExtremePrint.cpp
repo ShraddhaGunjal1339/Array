@@ -1,4 +1,4 @@
-//Better than ExtremePrint1.cpp
+//Better than Q5.1_ExtremePrint.cpp
 
 // 2 pointer approach
 //To print extreme
@@ -12,7 +12,7 @@
 using namespace std;
 
 
-void extreme_print(int a[] ,int size){
+void extremePrint(int a[] ,int size){
     int start =0;
     int end = size -1;
     while (start <= end){
@@ -39,6 +39,6 @@ int main(){
     int arr[10] ={1,2,3,4,5,6,7};
     int size =7;
 
-    extreme_print(arr ,size);
+    extremePrint(arr ,size);
     return 0;
 }
