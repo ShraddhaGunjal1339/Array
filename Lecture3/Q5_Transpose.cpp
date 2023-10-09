@@ -22,13 +22,27 @@ void transpose(int arr[][3] ,int r , int c ,int transpose_arr[][3]){
     }
 }
 
+
+/*o/p-->
+
+Give input 3 rows and 3 columns
+1 2 3 4 5 6 7 8 9
+1   2   3   
+4   5   6   
+7   8   9   
+
+1   4   7   
+2   5   8   
+3   6   9  
+*/
+
 int main()
 {
     int arr [3][3];
     int rows = 3 ;
     int cols = 3 ;
 
-    cout << "Give inpout to user " << rows 
+    cout << "Give input " << rows 
      << " rows and " << cols << " columns"<<endl;
     //tacking input from user  
     for(int i =0 ; i< rows ; i++){

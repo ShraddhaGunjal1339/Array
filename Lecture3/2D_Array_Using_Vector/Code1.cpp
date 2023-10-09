@@ -17,6 +17,14 @@ void printArray(vector <vector <int> > arr ){
     }
 }
 
+/*o/p-->
+
+4  9  1  
+2  4  7  
+8  7  1
+
+*/
+
 
 int main()
 {

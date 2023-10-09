@@ -15,13 +15,25 @@ void printRowWiseSum(int arr[][3] ,int rows ,int cols){
     
 }
 
+/*o/p-->
+
+1 2 3 4 5 6 7 8 9
+1   2   3   
+4   5   6   
+7   8   9   
+6
+15
+24
+
+*/
+
 int main()
 {
     int arr [3][3];
     int rows = 3 ;
     int cols = 3 ;
 
-    cout << "Give inpout to user " << rows 
+    cout << "Give input " << rows 
      << " rows and " << cols << " columns"<<endl;
     //tacking input from user 
     for(int i =0 ; i< rows ; i++){

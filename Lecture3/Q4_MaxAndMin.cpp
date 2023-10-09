@@ -29,13 +29,25 @@ int minimum(int arr[][3] , int rows , int cols){
     return mini;
 }
 
+
+/*
+
+Give input  3 rows and 3 columns
+1 2 3 4 5 6 7 8 9
+1   2   3   
+4   5   6   
+7   8   9   
+the maximum is :9
+the minimum is :1
+
+*/
 int main()
 {
     int arr [3][3];
     int rows = 3 ;
     int cols = 3 ;
 
-    cout << "Give inpout to user " << rows 
+    cout << "Give input " << rows 
      << " rows and " << cols << " columns"<<endl;
     //tacking input from user 
     for(int i =0 ; i< rows ; i++){
