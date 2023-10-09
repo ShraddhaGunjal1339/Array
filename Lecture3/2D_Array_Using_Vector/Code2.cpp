@@ -1,4 +1,5 @@
 #include<iostream>
+#include<vector>
 using namespace std;
 
 void printArray(vector <vector <int> > arr ){
@@ -35,6 +36,16 @@ int main()
     int row = 3;
     int col = 5;
     vector <vector <int> > arr (row ,vector <int> (col,0));   
+    //can be initilized by -1 OR 101 i.e. any number 
+
+    // vector <vector <int> > a (5 ,vector <int> (5,-8));
+    // printArray(a);
+    // a [2][3]=1;
+    // cout << a [2][3];
+
+
+
     printArray(arr);
+    
     return 0;
 } 
