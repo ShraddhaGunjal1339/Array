@@ -1,18 +1,18 @@
 #include<iostream>
 using namespace std;
 
-void printRowWiseSum(int arr[][3] ,int rows ,int cols){
+bool findKey ( int arr[][3] , int rows , int cols , int key){
 
-    //row wise sum -->row wise traversal
-    for(int i =0 ; i< rows ; i++){
-        int sum = 0 ;
-        for (int j = 0 ;  j< cols;j++){
-            sum += arr[i][j];
+    for (int i = 0 ; i < rows ; i++){
+        for ( int j =0 ; j < cols ; j++){
+            if(arr[i][j]  == key){
+                return true;
+            }
         }
-        cout << sum ;
-        cout << endl;
     }
-    
+
+    return false; 
+
 }
 
 int main()
@@ -29,9 +29,8 @@ int main()
             cin >> arr[i][j]; 
         }
     }
-    
 
-    //priting row wise
+    //priting row  wise (normally )
     for(int i =0 ; i< rows ; i++){
         for (int j = 0 ;  j< cols;j++){
             cout << arr[i][j]<<"   "; 
@@ -39,7 +38,14 @@ int main()
         cout <<endl;
     }
 
-    printRowWiseSum(arr ,rows , cols );
+    int key;
+    cout << "Enter Key" <<endl;
+    cin >> key;
 
+    if (findKey(arr , rows , cols , key)){
+        cout << "Key is found " << endl;
+    }else{
+        cout << "Key not found " << endl;
+    }
     return 0;
 }

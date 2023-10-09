@@ -1,18 +1,17 @@
 #include<iostream>
 using namespace std;
 
-void printRowWiseSum(int arr[][3] ,int rows ,int cols){
+void printColumnWiseSum ( int arr[][3] ,int rows , int cols){
 
-    //row wise sum -->row wise traversal
+    //col wise sum -->col wise traversal
     for(int i =0 ; i< rows ; i++){
         int sum = 0 ;
         for (int j = 0 ;  j< cols;j++){
-            sum += arr[i][j];
+            sum += arr[j][i];
         }
         cout << sum ;
         cout << endl;
     }
-    
 }
 
 int main()
@@ -31,7 +30,7 @@ int main()
     }
     
 
-    //priting row wise
+    //priting row  wise (normally )
     for(int i =0 ; i< rows ; i++){
         for (int j = 0 ;  j< cols;j++){
             cout << arr[i][j]<<"   "; 
@@ -39,7 +38,6 @@ int main()
         cout <<endl;
     }
 
-    printRowWiseSum(arr ,rows , cols );
-
+    printColumnWiseSum(arr , rows , cols );
     return 0;
 }
